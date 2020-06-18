@@ -1,4 +1,6 @@
 *.out
 *.o
+output
 
-template/output
+testcase/
+! ./template/testcase/
