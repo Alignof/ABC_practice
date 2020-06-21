@@ -2,5 +2,6 @@
 *.o
 output
 
+get_testcase.py
 testcase/
 ! ./template/testcase/
