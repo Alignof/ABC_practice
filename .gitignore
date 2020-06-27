@@ -2,6 +2,10 @@
 *.o
 output
 
+E.cpp
+F.cpp
+
+Makefile
 get_testcase.py
 testcase/
 ! ./template/testcase/

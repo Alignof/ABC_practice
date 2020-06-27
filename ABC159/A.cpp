@@ -9,25 +9,19 @@ int main(void){
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	int N;
+	int N,M;
 	int i,j;
 	int tmp;
 	int answer=0;
 	int counter=0;
 	vector<int> given;
 
-	cin >> N;
+	cin >> N >> M;
 
-	for(i=0;i<N;i++){
-		cin >> tmp;
-		given.push_back(tmp);
-	}
-
-	//sort(given.begin(),given.end());
-	//sort(given.begin(),given.end(),greater<int>());
+	if(N>0) answer+=N*(N-1);
+	if(M>0) answer+=M*(M-1);
 	
-	answer=;
-	cout << answer << endl;
+	cout << answer/2 << endl;
 
 	return 0;
 }
