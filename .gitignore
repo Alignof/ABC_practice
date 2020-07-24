@@ -1,9 +1,12 @@
 *.out
 *.o
 output
+*.cpp
 
-E.cpp
-F.cpp
+! A.cpp
+! B.cpp
+! C.cpp
+! D.cpp
 
 Makefile
 get_testcase.py
