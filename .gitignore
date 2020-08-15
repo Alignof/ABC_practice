@@ -2,6 +2,7 @@
 *.o
 output
 
+*xx
 E.cpp
 F.cpp
 
