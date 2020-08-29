@@ -1,6 +1,10 @@
 *.out
 *.o
 output
+A
+B
+C
+D
 
 *xx
 E.cpp
