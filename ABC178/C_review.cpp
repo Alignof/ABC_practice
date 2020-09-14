@@ -6,15 +6,14 @@ using ll = long long;
 const ll MOD=1e9+7;
 
 ll powmod(ll x,ll y){
-	ll pow=x;
+	ll pow=1;
 
-	if(y==0) return 1;
-	for(int i=1;i<y;i++){
+	for(ll i=0;i<y;i++){
 		pow*=x;
 		pow%=MOD;
 	}
 
-	return pow%MOD;
+	return pow;
 }
 
 
@@ -22,7 +21,6 @@ int main(void){
 	cin.tie(0);
 	ios::sync_with_stdio(false);
 
-	int i,k;
 	ll N;
 	ll ans=0;
 
@@ -33,14 +31,12 @@ int main(void){
 	if(N==2)
 		ans=2;
 	else
-		ans=((N*(N-1))%MOD) * powmod(10,N-2);
-	
+		ans=powmod(10,N)-powmod(9,N)-powmod(9,N)+powmod(8,N);
 
-	ll correct=powmod(10,N)-powmod(9,N)-powmod(9,N)+powmod(8,N);
-	correct%=MOD;
 	ans%=MOD;
+	ans=(ans+MOD)%MOD;
+	
 	cout << ans << endl;
-	cout << correct << endl;
 
 	return 0;
 }
